@@ -55,4 +55,8 @@ class EVSadan  extends Vehicle {
     drive() {
         return `${this.model} drives`
     }
+
+    recharge(){
+        return `${this.model} recharged`
+    }
 }
