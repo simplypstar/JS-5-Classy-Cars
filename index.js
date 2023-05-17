@@ -5,58 +5,57 @@ class Vehicle {
     }
 
    drive() {
-        return `$(this.model) drives`
-    }
+        return this.model + " " + "drives"
+   }
 }
 
 class Sedan extends Vehicle {
-    condtructor(model, backupCamera){
+    constructor(model, backupCamera){
         super(model)
         this.model = model
         this.backupCamera = backupCamera
     }
 
     drive() {
-        return `${this.model} drives`
+        return this.model + " " + "drives"
     }
 }
 
 class Suv extends Vehicle {
-    condtructor(model, offloadPackage){
+    constructor(model, offroadPackage){
         super(model)
         this.model = model
-        this.offroadPackagee = offroadPackage
+        this.offroadPackage = offroadPackage
     }
 
     drive() {
-        return `${this.model} drives`
+        return this.model + " " + "drives"
     }
 }
 
-class truck extends Vehicle {
-    condtructor(model, offloadPackage){
+class Truck extends Vehicle {
+    constructor(model, towingCapacity){
         super(model)
         this.model = model
-        this.towingCapacity = this.towingCapacity
+        this.towingCapacity = towingCapacity
     }
 
-    drive() {
-        return `${this.model} drives`
+    drive(){
+        return this.model + " " + "drives"
     }
 }
 
-class EVSadan  extends Vehicle {
-    condtructor(model, backupCamera){
+class EVSedan extends Vehicle {
+    constructor(model){
         super(model)
         this.model = model
-        this.backupCamera = this.backupCamera  
     }
 
-    drive() {
-        return `${this.model} drives`
+    drive(){
+        return this.model + " " + "drives"
     }
 
     recharge(){
-        return `${this.model} recharged`
-    }
+        return this.model + " " + "recharges"
+    } 
 }
